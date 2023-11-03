@@ -1,0 +1,38 @@
+package connectionDataBase;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+public class ConnectionDataBase {
+	
+	private static final String USERNAME = "root";
+	
+	private static final String PASSWORD = "Dorgas100!";
+	
+	private static final String DATABASE_URL =	
+			"jdbc:mysql://localhost:3306/agencia_viagem";
+	
+	public static Connection createConnectionToMySQL() {
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			System.out.println("Driver Encontrado!");
+		} catch (ClassNotFoundException e) {
+			System.out.println(e.getMessage());
+		}
+
+		try {
+
+			Connection connection = DriverManager.getConnection(USERNAME, PASSWORD,DATABASE_URL);
+			System.out.println("Conectado!");
+			return connection;
+
+		} catch (SQLException e) {
+
+			System.out.println(e.getMessage());
+			return null;
+		}
+
+	}
+
+}
