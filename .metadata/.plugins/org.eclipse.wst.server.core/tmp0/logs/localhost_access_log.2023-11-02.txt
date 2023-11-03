@@ -376,3 +376,14 @@
 0:0:0:0:0:0:0:1 - - [02/Nov/2023:22:07:39 -0300] "GET /PotterTravel-MVC/index.html HTTP/1.1" 200 3226
 0:0:0:0:0:0:0:1 - - [02/Nov/2023:22:07:43 -0300] "GET /PotterTravel-MVC/ReadController HTTP/1.1" 200 4514
 0:0:0:0:0:0:0:1 - - [02/Nov/2023:22:08:04 -0300] "GET /PotterTravel-MVC/index.html HTTP/1.1" 304 -
+127.0.0.1 - - [02/Nov/2023:22:38:47 -0300] "GET / HTTP/1.1" 404 763
+0:0:0:0:0:0:0:1 - - [02/Nov/2023:22:38:47 -0300] "GET /PotterTravel-MVC/index.html HTTP/1.1" 200 3226
+0:0:0:0:0:0:0:1 - - [02/Nov/2023:22:38:59 -0300] "GET /PotterTravel-MVC/cadastro.jsp HTTP/1.1" 200 2779
+0:0:0:0:0:0:0:1 - - [02/Nov/2023:22:39:34 -0300] "POST /PotterTravel-MVC/CreateController HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [02/Nov/2023:22:39:35 -0300] "GET /PotterTravel-MVC/ReadController HTTP/1.1" 200 4994
+0:0:0:0:0:0:0:1 - - [02/Nov/2023:22:40:12 -0300] "GET /PotterTravel-MVC/UpdateController?id=11 HTTP/1.1" 200 2944
+0:0:0:0:0:0:0:1 - - [02/Nov/2023:22:40:34 -0300] "POST /PotterTravel-MVC/UpdateController HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [02/Nov/2023:22:40:34 -0300] "GET /PotterTravel-MVC/ReadController HTTP/1.1" 200 4993
+0:0:0:0:0:0:0:1 - - [02/Nov/2023:22:41:06 -0300] "GET /PotterTravel-MVC/DeleteController?id=11 HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [02/Nov/2023:22:41:06 -0300] "GET /PotterTravel-MVC/ReadController HTTP/1.1" 200 4505
+0:0:0:0:0:0:0:1 - - [02/Nov/2023:22:41:23 -0300] "GET /PotterTravel-MVC/index.html HTTP/1.1" 304 -
