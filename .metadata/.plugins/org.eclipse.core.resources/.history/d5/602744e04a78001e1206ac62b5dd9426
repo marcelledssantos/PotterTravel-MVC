@@ -1,0 +1,45 @@
+package controller;
+
+import java.io.IOException;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import dao.ClienteDAO;
+import model.Cliente;
+
+@WebServlet("/UpdateController")
+public class UpdateController extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+   
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		int idCliente = Integer.parseInt(req.getParameter("id"));
+		ClienteDAO cdao = new ClienteDAO();
+		Cliente contatoSelecionado = cdao.getClienteById(idCliente);
+
+		req.setAttribute("contato", contatoSelecionado);
+
+		RequestDispatcher rd = req.getRequestDispatcher("/atualizar.jsp");
+
+		rd.forward(req, resp);
+	}
+
+
+	@Override
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		Contato contatoAlterado = new Contato();
+		contatoAlterado.setNome(req.getParameter("nome"));
+		contatoAlterado.setIdade(Integer.parseInt(req.getParameter("idade")));
+		contatoAlterado.setDataCadastro(new Date());
+		contatoAlterado.setId(Integer.parseInt(req.getParameter("id")));
+
+		ContatoDAO cd = new ContatoDAO();
+		cd.update(contatoAlterado);
+		resp.sendRedirect("home");
+	}
+
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- Inclua o link para o Bootstrap via CDN -->
+    <link rel="icon" type="image/x-icon" href="./icon/favicon.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+   <header>
+		<nav class="navbar navbar-expand-lg navbar-dark  bg-dark text-light">
+			<div class="container">
+				<a class="navbar-brand" href="#">
+            <img src="Icon/aviao.png" width="40" height="40" class="d-inline-block align-center" alt="Logo">Potter Travel</a>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item"><a class="nav-link" href="index.html">Home</a>
+						</li>
+						<li class="nav-item"><a class="nav-link"
+							href="./ReadController">Cadastros</a></li>
+						<li class="nav-item"><a class="nav-link" href="#">Destinos</a></li>
+						<li class="nav-item"><a class="nav-link" href="#">Promoções</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+    <!-- Corpo da Página -->
+     <div class="container mt-5">
+        <div class="jumbotron">
+            <h1 class="display-4">Bem-vindo à Potter Travel</h1>
+            <p class="lead">Descubra aventuras incríveis em todo o mundo.</p>
+            <a class="btn btn-primary btn- btn-dark" href="./cadastro.jsp" role="button">Cadastre-se</a>
+        </div>
+    </div>
+  
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="Icon/menina no carro.jpg" class="card-img-top" alt="Menina no carro">
+          <div class="card-body">
+            <h5 class="card-title text-center">Os melhores destinos é na Potter Travel</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="Icon/Promoção.jpg" class="card-img-top" alt="Imagem 2">
+          <div class="card-body">
+            <h5 class="card-title text-center">Promoções</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="Icon/passaporte.jpg" class="card-img-top" alt="Imagem 3">
+          <div class="card-body">
+            <h5 class="card-title text-center">Dicas para conseguir o visto americano</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+    <!-- Rodapé -->
+    <footer class="bg-dark text-light text-center mt -5 fixed-bottom">
+        &copy; 2023 Potter Travel. Todos os direitos reservados.
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
